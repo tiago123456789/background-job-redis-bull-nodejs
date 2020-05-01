@@ -6,8 +6,8 @@ const email = new Email();
 
 app.get("/send", async (request, response) => {
     Producer.publishInQueue(CONSTANTS.QUEUES.EMAIL, { 
-        email: "tiagorosadacost@gmail.com",
-        name: "Tiago R. da costa"
+        email: "teste@gmail.com",
+        name: "Teste testando"
     });
     response.json({ msg: "Operation success!!!" });
 });
